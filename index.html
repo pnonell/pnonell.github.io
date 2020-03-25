@@ -201,7 +201,6 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<div w3-include-html="footer.html"></div>
 					</footer>
 
 			</div>
@@ -212,6 +211,11 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+			    $(function(){
+			        $('#footer').load("footer.html");
+			    });
+			</script>
 
 	</body>
 </html>
