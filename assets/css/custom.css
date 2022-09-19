@@ -5,3 +5,8 @@
 .professor h1{
   font-size: 2.25em;
 }
+
+.cell-prof{
+  width: 600px;
+  margin: 10px;
+}
