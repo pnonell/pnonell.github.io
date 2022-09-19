@@ -9,8 +9,9 @@
 .cell-prof{
   width: 600px;
   margin: 30px;
-  padding: 20px
+  padding: 20px;
   background-color: white;
+  color: black;
   text-align: center;
   border-radius: 25px;
 }
