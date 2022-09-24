@@ -45,6 +45,17 @@ html {
   text-align: end;
 }
 
+header{
+  position: relative;
+}
+
+.profile{
+  position: absolute;
+  top: -170px;
+  right: 90px;
+  margin: 10px;
+}
+
 a.link-section{
   /* color: white; */
 }
