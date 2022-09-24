@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Full-Body Interaction Lab</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a target="_blank" href="/assets/PAU NONELL ISACH_CV_ENGLISH.pdf">CV</a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/in/pau-nonell-isach/">LinkedIn</a></li>
+						<li style="display:flex">
+							<a href="mailto:pau.nonell@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a>
+							<a href="tel:+34620321200" class="icon solid style2 fa-phone"><span class="label">Phone</span></a>
+							<a target="_blank" href="https://github.com/pnonell" class="icon brands style2 fa-github"><span class="label">GitHub</span></a>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Full-Body Interaction Lab</h1>
+							<span class="image main"><img src="images/panCMES.jpg" alt="" /></span>
+							<p>
+								<b>Context:</b> <br />&nbsp;&nbsp;&nbsp;&nbsp;Laboratory of the Universitat Pompeu Fabra that studies the Full-body Interaction, where I developed my master's thesis.
+							</p>
+							<p>
+								<b>Technologies:</b> <br />&nbsp;&nbsp;&nbsp;&nbsp;Robotics, Mixed-reality, Interaction, Computer Vision, Deep Learning, Python, C#, Unity
+							</p>
+							<p align="justify">
+								<b>Description:</b> <br />&nbsp;&nbsp;&nbsp;&nbsp;The Full-Body Interaction Lab has a mixed-rality interactive installation which consists in two projectors that display the environment and four cameras that detect and track the players on the room. One of the functions of this installation is to by played with different games developed in Unity, which aim to study the interaction of children with autism spectrum disorder in cooperation with children without it. While for years, the tracking system worked with traditional computer vision methods, new games led to difficulties in its performance, so it needed to be improved.
+								<br />&nbsp;&nbsp;&nbsp;&nbsp; My master's thesis consisted in redesigning this tracking system by using Deep Learning methods. This presented several challenges, such as, the need of real-time detection, the confusion between players and the connection with the Unity system. The proposed pipeline included a preprocessing of the images, the predictions of the positions of the users by using the You Only Look Once (YOLO) neural network model and a tracking module based on a Linear Kalman Filter. The final implentation was done in Python and used vision and Deep Learning libraries like OpenCV and Tensorflow.
+							<p>
+								<b>Lab's Website</b> <a target="_blank" href="https://www.upf.edu/web/fubintlab">upf.edu/web/fubintlab</a>
+							</p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+					$(function(){
+							$('#footer').load("footer.html");
+							$('#header').load("header.html");
+					});
+			</script>
+
+	</body>
+</html>
