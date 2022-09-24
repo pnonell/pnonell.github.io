@@ -41,6 +41,10 @@ html {
   margin-top: 10px;
 }
 
+.hastag{
+  text-align: end;
+}
+
 a.link-section{
   /* color: white; */
 }
