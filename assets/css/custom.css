@@ -54,6 +54,10 @@ html {
   font-size: 15px;
 }
 
+.prof-group img{
+  vertical-align: middle;
+}
+
 .hastag{
   text-align: end;
 }
