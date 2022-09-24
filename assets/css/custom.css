@@ -37,6 +37,10 @@ html {
   width: auto;
 }
 
+.prof-img text{
+  margin-top: 10px;
+}
+
 a.link-section{
   /* color: white; */
 }
