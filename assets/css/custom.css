@@ -35,6 +35,7 @@ html {
   transform: translateY(-50%) translateX(-50%);
   height: auto;
   width: auto;
+  margin: 15px 0px;
 }
 
 .prof-img text{
@@ -43,11 +44,14 @@ html {
 
 .prof-title{
   text-align: center;
+  font-size: 25px;
+  font-size: 25px;
 }
 
 .prof-group{
   color: grey;
   text-align: right;
+  font-size: 15px;
 }
 
 .hastag{
