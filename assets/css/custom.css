@@ -49,7 +49,7 @@ header{
   position: relative;
 }
 
-@media (min-width: 1075) {
+@media (min-width: 1075px) {
   .profile{
     position: absolute;
     top: -170px;
@@ -62,7 +62,7 @@ a.link-section{
   /* color: white; */
 }
 
-@media (max-width: 1075) {
+@media (max-width: 1075px) {
 /*  .profile{
     position: absolute;
     top: 0px;
