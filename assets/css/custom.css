@@ -41,6 +41,15 @@ html {
   margin-top: 10px;
 }
 
+.prof-title{
+  text-align: center;
+}
+
+.prof-group{
+  color: grey;
+  text-align: right;
+}
+
 .hastag{
   text-align: end;
 }
