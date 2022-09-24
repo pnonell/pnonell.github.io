@@ -63,10 +63,8 @@ a.link-section{
 }
 
 @media (max-width: 1075px) {
-/*  .profile{
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    margin: 10px;
-  }*/
+  .profile{
+    margin: 0px auto 20px auto;
+    width: 150px;
+  }
 }
