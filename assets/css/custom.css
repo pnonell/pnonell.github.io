@@ -49,13 +49,24 @@ header{
   position: relative;
 }
 
-.profile{
-  position: absolute;
-  top: -170px;
-  right: 90px;
-  margin: 10px;
+@media only screen and (min-width: 1075) {
+  .profile{
+    position: absolute;
+    top: -170px;
+    right: 90px;
+    margin: 10px;
+  }
 }
 
 a.link-section{
   /* color: white; */
+}
+
+@media only screen and (max-width: 1075) {
+/*  .profile{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 10px;
+  }*/
 }
