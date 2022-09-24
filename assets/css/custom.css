@@ -25,6 +25,7 @@ html {
   height: 0;
   padding-bottom: 100%;
   position: relative;
+  margin: 15px 0px;
 }
 
 .prof-img img{
@@ -35,7 +36,6 @@ html {
   transform: translateY(-50%) translateX(-50%);
   height: auto;
   width: auto;
-  margin: 15px 0px;
 }
 
 .prof-img text{
