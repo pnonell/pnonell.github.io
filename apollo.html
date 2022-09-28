@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Apollo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a target="_blank" href="/assets/PAU NONELL ISACH_CV_ENGLISH.pdf">CV</a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/in/pau-nonell-isach/">LinkedIn</a></li>
+						<li style="display:flex">
+							<a href="mailto:pau.nonell@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a>
+							<a href="tel:+34620321200" class="icon solid style2 fa-phone"><span class="label">Phone</span></a>
+							<a target="_blank" href="https://github.com/pnonell" class="icon brands style2 fa-github"><span class="label">GitHub</span></a>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Apollo, your music recommender</h1>
+							<span class="image main"><img src="images/panApolo.jpg" alt="" /></span>
+							<p>
+								<b>Context:</b> <br />&nbsp;&nbsp;&nbsp;&nbsp;Final project of the course in Natural Language Interaction that I attended during my master studies at Universitat Pompeu Fabra
+							</p>
+							<p>
+								<b>Technologies:</b> <br />&nbsp;&nbsp;&nbsp;&nbsp;Natural Language Interaction, Graphical User Interface, Speach-to-text, Text-to-speach, Python, QML
+							</p>
+							<p align="justify">
+								<b>Description:</b> <br />&nbsp;&nbsp;&nbsp;&nbsp;Apollo is a conversational agent in the form of a Graphical User Interface which has the goal to inform about classical music and make recommendations. It uses information from the online music database Last.fm and it follows its execution in 3 phases: the Greeter, which greets the user and ask for its name; the Suggester, which suggests musical periods, composers and give information about them; and the Closer, which farewells the conversation. The GUI is implemented in Python and the Qt framework and it uses sound effects and animations.
+								<br />&nbsp;&nbsp;&nbsp;&nbsp; This agent receives the user's inputs from the microphone and preprocesses it with the Speech Recognition and Punctuator libraries. Then, the Dialogue Manager of the agent tokenizes the data, tags the sentences and vectorizes them with Bag of Words by using the Natural Language Tool Kit (NLTK) library. This, classifies the dialogue in types of sentences and acts according to the information previously given. In order to generate the response, the agent uses a template base generator, which uses sample senteces with gaps filled by the model and then reproduce them with the text-to-speach library Pyttsx3. The information and questions from the user are stored in order to adapt the conversation to the previous dialogue, for example, by not repeating suggestions.
+								<p>
+									<b>Github repository:</b> <a target="_blank" href="https://github.com/pnonell/apollo">github.com/pnonell/apollo</a>
+								</p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+					$(function(){
+							$('#footer').load("footer.html");
+							$('#header').load("header.html");
+					});
+			</script>
+
+	</body>
+</html>
