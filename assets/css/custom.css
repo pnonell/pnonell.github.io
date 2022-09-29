@@ -79,6 +79,10 @@ a.link-section{
   /* color: white; */
 }
 
+.media-page{
+  max-width: 100%;
+}
+
 @media (max-width: 1075px) {
   .profile{
     margin: -10px auto 20px auto;
