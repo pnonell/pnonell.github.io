@@ -91,3 +91,12 @@ a.link-section{
     display: block;
   }
 }
+
+.p-img {
+  display: flex;
+}
+
+.fig-img {
+  margin: 10px;
+  display: block;
+}
