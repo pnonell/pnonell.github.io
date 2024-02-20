@@ -22,6 +22,9 @@
 
 			gtag('config', 'G-S4TNGE6NN4');
 		</script>
+		<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+		<!-- we import arjs version without NFT but with marker + location based support -->
+		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -32,13 +35,23 @@
 					<div id="main">
 						<div class="inner">
 							<h1>AR Preview</h1>
-							<model-viewer alt="Timberland's boot" src="assets/boot/boot.gltf" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
-							<a href="intent://arvr.google.com/scene-viewer/1.0?file=https://pnonell.github.io/assets/boot/boot.gltf#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">Boot AR Android</a>
-							<div>
-								<a rel="ar" href="/assets/boot.usdz">
-									Boot AR iOS
-								</a>
-							</div>
+							<a-scene embedded arjs>
+								<a-marker preset="hiro">
+								  <!-- we use cors proxy to avoid cross-origin problems -->
+								  <!--
+									⚠️⚠️⚠️
+									https://arjs-cors-proxy.herokuapp.com/ is now offline, Heroku has dismissed all his free plans from November 2022.
+									You need to host your own proxy and use it instead. The proxy is based on CORS Anywhere (see https://github.com/Rob--W/cors-anywhere).
+									⚠️⚠️⚠️
+								  -->
+								  <a-entity
+									position="0 0 0"
+									scale="0.05 0.05 0.05"
+									gltf-model="https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+								  ></a-entity>
+								</a-marker>
+								<a-entity camera></a-entity>
+							  </a-scene>
 						</div>
 					</div>
 					
