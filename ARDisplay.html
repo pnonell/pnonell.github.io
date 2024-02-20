@@ -14,7 +14,6 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-S4TNGE6NN4"></script>
-		<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
@@ -26,7 +25,7 @@
 		<!-- we import arjs version without NFT but with marker + location based support -->
 		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" style="margin : 0px; overflow: hidden;">
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -37,13 +36,6 @@
 							<h1>AR Preview</h1>
 							<a-scene embedded arjs>
 								<a-marker preset="hiro">
-								  <!-- we use cors proxy to avoid cross-origin problems -->
-								  <!--
-									⚠️⚠️⚠️
-									https://arjs-cors-proxy.herokuapp.com/ is now offline, Heroku has dismissed all his free plans from November 2022.
-									You need to host your own proxy and use it instead. The proxy is based on CORS Anywhere (see https://github.com/Rob--W/cors-anywhere).
-									⚠️⚠️⚠️
-								  -->
 								  <a-entity
 									position="0 0 0"
 									scale="0.05 0.05 0.05"
